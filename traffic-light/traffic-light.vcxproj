@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{84957d84-35c9-4350-bdd8-bc5d4f8f59f5}</ProjectGuid>
+    <ProjectGuid>{F884DDB0-8BCA-4BA9-A880-E009FD604652}</ProjectGuid>
     <RootNamespace>ConsoleApplication3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>traffic-light</ProjectName>

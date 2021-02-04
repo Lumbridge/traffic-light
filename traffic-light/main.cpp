@@ -21,7 +21,6 @@ int main()
 	// Setting multiple traffic lights at once
 	// =======================================
 	
-	TrafficLightController::DrawTrafficLight(trafficLight);
 	auto colours = new std::vector<Lamp::lamp_colours>();
 	colours->push_back(Lamp::lamp_colours::red);
 	colours->push_back(Lamp::lamp_colours::orange);
