@@ -1,6 +1,6 @@
 #include "TrafficLightController.h"
 
-TrafficLight TrafficLightController::SetActiveColour(TrafficLight& trafficLight, Lamp::lamp_colours colour)
+void TrafficLightController::SetActiveColour(TrafficLight& trafficLight, Lamp::lamp_colours colour)
 {
 	auto lamps = &trafficLight.lamps;
 	GlobalFunctions::SetConsoleColour(15);
@@ -18,10 +18,9 @@ TrafficLight TrafficLightController::SetActiveColour(TrafficLight& trafficLight,
 			std::cout << "Turned lamp with ID: " << lamp->lampId() << " & colour: " << Lamp::ToString(lamp->LampColour) << " [ON].\n";
 		}
 	}
-	return trafficLight;
 }
 
-TrafficLight TrafficLightController::SetActiveColours(TrafficLight& trafficLight, std::vector<Lamp::lamp_colours> colours)
+void TrafficLightController::SetActiveColours(TrafficLight& trafficLight, std::vector<Lamp::lamp_colours> colours)
 {
 	auto lamps = &trafficLight.lamps;
 	GlobalFunctions::SetConsoleColour(15);
@@ -39,8 +38,6 @@ TrafficLight TrafficLightController::SetActiveColours(TrafficLight& trafficLight
 			std::cout << "Turned lamp with ID: " << lamp->lampId() << " & colour: " << Lamp::ToString(lamp->LampColour) << " [OFF].\n";
 		}
 	}
-	
-	return trafficLight;
 }
 
 void TrafficLightController::DrawTrafficLight(TrafficLight& trafficLight)
